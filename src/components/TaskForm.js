@@ -5,7 +5,7 @@ const TaskForm = () => {
   const { addTask, clearList, editTask, editItem } = useContext(TaskListContext)
   const [title, setTitle] = useState('')
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     if (!editItem) {
       addTask(title)
@@ -15,7 +15,7 @@ const TaskForm = () => {
     }
   }
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setTitle(e.target.value)
   }
 

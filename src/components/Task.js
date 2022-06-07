@@ -15,7 +15,7 @@ const Task = ({ task }) => {
         </button>{' '}
         <button className="btn-edit task-btn" onClick={() => findItem(task.id)}>
           <i className="fas fa-pen"></i>
-        </button>
+        </button> 
       </div>
     </li>
   )
